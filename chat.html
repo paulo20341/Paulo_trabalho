@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialTube</title>
+    <link rel="stylesheet" href="css/styles8.css">
+</head>
+<body>
+    <header>
+        <h1>SocialTube</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" id="home">Início</a></li>
+                <li><a href="upload.html" id="upload">Upload</a></li>
+                <li><a href="noticias.html" id="explore">Noticias</a></li>
+                <li><a href="perfil.html" id="profile">Perfil</a></li>
+                <li><a href="chat.html" id="chat">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sugestões para seguir</h2>
+            <ul class="lista_perfil">
+                <li class="perfil">
+                    <img src="img/images.jpg" alt="Profile">
+                    <p>Super Xandão</p>
+                    <button class="follow-btn">Seguir</button>
+                </li>
+                <li class="perfil">
+                    <img src="img/neymar-de-moicano-quando-ainda-vestia-a-camisa-do-santos-1597228374622_v2_602x680.jpg" alt="Profile">
+                    <p>Neymar Jr</p>
+                    <button class="follow-btn">Seguir</button>
+                </li>
+                <li class="perfil">
+                    <img src="img/1_virginia_fonseca_3_1024x770-29201131.jpg" alt="Profile">
+                    <p>Virginia Fonseca</p>
+                    <button class="follow-btn">Seguir</button>
+                </li>
+                <li class="perfil">
+                    <img src="img/images (1).jpg" alt="Profile">
+                    <p>Alex Poatan</p>
+                    <button class="follow-btn">Seguir</button>
+                </li>
+                <li class="perfil">
+                    <img src="img/images (2).jpg" alt="Profile">
+                    <p>Charles do Bronxs</p>
+                    <button class="follow-btn">Seguir</button>
+                </li>
+                <li class="perfil">
+                    <img src="img/images (3).jpg" alt="Profile">
+                    <p>Bisteconee</p>
+                    <button class="follow-btn">Seguir</button>
+                </li>
+                <li class="perfil">
+                    <img src="img/img5f03f5cf1b7f35.11946885.jpg" alt="Profile">
+                    <p>Loud Coringa</p>
+                    <button class="follow-btn">Seguir</button>
+                </li>
+            </ul>
+        </div>  
+        
+        <div class="chat-container">
+            <div class="mensagem_chat" id="message-container">
+                
+                <div class="message incoming">
+                    <img src="img/download.jpg" alt="Avatar">
+                    <div class="message-content">
+                        <p>Olá! Como vai?</p>
+                        <span class="time">11:30</span>
+                    </div>
+                </div>
+                <div class="message outgoing">
+                    <div class="message-content">
+                        <p>Estou bem, e você?</p>
+                        <span class="time">11:31</span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; SocialTube</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.follow-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    if (button.classList.contains('following')) {
+                        button.classList.remove('following');
+                        button.textContent = 'Seguir';
+                    } else {
+                        button.classList.add('following');
+                        button.textContent = 'Seguindo';
+                    }
+                });
+            });
+        });
+
+        const sendButton = document.getElementById('send-button');
+        sendButton.addEventListener('click', () => {
+            const messageInput = document.getElementById('message-input');
+            const message = messageInput.value;
+
+            if (message.trim() === '') return;
+
+const newMessage = document.createElement('div');
+newMessage.classList.add('message', 'outgoing');
+
+const messageContent = document.createElement('div');
+messageContent.classList.add('message-content');
+messageContent.innerHTML = `
+    <p>${message}</p>
+    <span class="time">${getCurrentTime()}</span>
+`;
+
+newMessage.appendChild(messageContent);
+
+const messageContainer = document.getElementById('message-container');
+messageContainer.appendChild(newMessage);
+messageContainer.scrollTop = messageContainer.scrollHeight;
+
+messageInput.value = '';
+});
+
+function getCurrentTime() {
+const now = new Date();
+const hours = String(now.getHours()).padStart(2, '0');
+const minutes = String(now.getMinutes()).padStart(2, '0');
+return `${hours}:${minutes}`;
+}
+</script>
+
+</body>
+</html>
+

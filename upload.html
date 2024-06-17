@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Vídeos - SocialTube</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2><a href="index.html" id="home">SocialTube</a></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">Início</a></li>
+                    <li><a href="noticias.html" id="explore">Noticias</a></li>
+                    <li><a href="#" id="profile">Perfil</a></li>
+                    <li><a href="#" id="logout" onclick="closeTab()">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="upload">
+            <div class="container">
+                <h2>Upload de Vídeos</h2>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <input type="file" name="video" id="video" accept="video/*" required>
+                    <label for="video">Escolher vídeo</label>
+                    <input type="text" name="title" id="title" placeholder="Título do Vídeo" required>
+                    <textarea name="description" id="description" placeholder="Descrição do Vídeo"></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 SocialTube</p>
+        </div>
+    </footer>
+
+    <script>
+        function closeTab() {
+            if (confirm("Tem certeza que deseja sair da SocialTube?")) {
+                window.close();
+            }
+        }
+    </script>
+</body>
+</html>

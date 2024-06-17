@@ -1,0 +1,36 @@
+Youtube = videos e upload de videos
+twitter = noticias e perfil
+
+---------------------------------------------------------------------------------------------
+
+Tema Escolhido: SocialTube - Plataforma de Vídeos e Conversas
+
+Motivação:
+
+Integração Social: A motivação principal por trás do SocialTube é criar uma plataforma que combine a experiência de assistir vídeos com a interação social, semelhante ao que vemos em sites de mídia social como o Twitter.
+
+Diversidade de Conteúdo: Queremos oferecer aos usuários uma ampla variedade de conteúdo de vídeo, desde notícias até entretenimento e tutoriais, permitindo que eles descubram e compartilhem diferentes tipos de vídeos.
+
+Facilidade de Interação: A inclusão de recursos de conversas destacadas visa incentivar a interação entre os usuários, permitindo que eles discutam sobre os vídeos que assistiram e compartilhem suas opiniões e pensamentos.
+
+Descrição das Páginas e Funcionalidades:
+
+
+
+-----------------------------------
+
+Página Inicial (index.html): A página inicial apresenta uma visão geral dos vídeos mais recentes e populares, além de fornecer links para outras seções do site, como notícias e perfil do usuário.
+
+Página de Notícias (noticias.html): Esta página exibe notícias recentes e relevantes, juntamente com uma imagem ilustrativa e um botão "Ler Mais" que leva os usuários a artigos completos ou vídeos relacionados.
+
+Página de Perfil (perfil.html): Aqui, os usuários podem visualizar e editar suas informações de perfil, incluindo nome, foto de perfil e biografia. Eles também podem ver uma lista de seus vídeos enviados e participar de conversas em andamento.
+-----------------------------------
+
+
+
+
+Tecnologias Utilizadas:
+
+HTML e CSS: Para a estruturação e estilização das páginas.
+JavaScript: Para adicionar interatividade, como a função de saída com confirmação.
+Servidor Web (opcional): Para hospedar o site e torná-lo acessível ao público.

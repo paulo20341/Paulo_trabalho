@@ -1,0 +1,168 @@
+
+header {
+    background-color: #1da1f2;
+    color: #000000;
+    padding: 20px;
+}
+
+
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000; 
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+#perfil_secao {
+    padding: 20px;
+}
+
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.cover-photo img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.avatar {
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.info_perfil {
+    margin-left: 20px;
+}
+
+h1, p {
+    margin: 5px 0;
+}
+
+.bio {
+    color: #657786;
+}
+
+.perfil1 {
+    margin-top: 20px;
+}
+
+.edit-profile-btn, .follow-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #1da1f2;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.perfil-details {
+    margin-top: 20px;
+    margin-right: 70px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #1da1f2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.menu-navegacao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-navegacao ul li {
+    margin-left: 20px;
+}
+
+.menu-navegacao ul li:first-child {
+    margin-left: 0;
+}
+
+.menu-navegacao ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.menu-navegacao ul li a:hover {
+    background-color: #1da1f2;
+}
+.logo h2 {
+    margin: 0;
+    color: #000000;
+    font-family: 'Trebuchet MS', sans-serif;
+}

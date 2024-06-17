@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SocialTube</title>
+    <link rel="stylesheet" href="css/styles5.css">
+</head>
+<body>
+    <header>
+        <img src="img/LogoSample_ByTailorBrands-removebg-preview.png" alt="Netflix Logo">
+    </header>
+    <main>
+    <div class="login1">
+        <form class="login_formulario" id="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+            <p class="esqueciminhasenha">Esqueceu sua senha? <a href="#">Recuperar senha</a></p>
+            <p class="registrar_link">Não tem uma conta? <a href="register.html">Registrar-se</a></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            // e basicamente quando clica no botao envia pro index2.html
+            window.location.href = "index2.html";
+        });
+    </script>
+</body>
+</html>
